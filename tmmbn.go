@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2025 The Pion community <https://pion.ly>
+// SPDX-License-Identifier: MIT
+
 package rtcp
 
 import (
@@ -32,7 +35,7 @@ func (p TMMBN) Marshal() ([]byte, error) {
 		 0                   1                   2                   3
 		 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-		|V=2|P|  FMT=3  |   PT = 205    |          length               |
+		|V=2|P|  FMT=4  |   PT = 205    |          length               |
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 		|                  SSRC of RTCP packet sender                   |
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
